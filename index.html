@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which flower are you?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wash" aria-hidden="true">
+    <span class="petal p1"></span>
+    <span class="petal p2"></span>
+    <span class="petal p3"></span>
+    <span class="petal p4"></span>
+  </div>
+  <main>
+    <section id="form-view" class="card">
+      <p class="brand">Flowering</p>
+      <p class="eyebrow">A quiet matching</p>
+      <h1>Which <em>flower</em> are you?</h1>
+      <p class="lede">Give your name and the day you arrived. We will name the bloom you already are.</p>
+      <form id="bloom-form" novalidate>
+        <label for="name">Your name
+          <input type="text" id="name" name="name" autocomplete="name" maxlength="80" placeholder="Zainab" required>
+        </label>
+        <label for="birthdate">Birth date
+          <input type="date" id="birthdate" name="birthdate" required>
+        </label>
+        <p id="error" class="error" hidden></p>
+        <button type="submit">Bloom</button>
+      </form>
+    </section>
+
+    <section id="result-view" class="card result" hidden>
+      <p class="eyebrow" id="result-eyebrow"></p>
+      <figure class="bloom-mark">
+        <img id="result-photo" alt="" hidden>
+        <span id="result-emoji" aria-hidden="true"></span>
+      </figure>
+      <p class="you-are"><span id="result-name"></span>, you are</p>
+      <h2 id="result-flower"></h2>
+      <ul id="result-qualities"></ul>
+      <p id="result-portrait"></p>
+      <p id="result-season" class="season"></p>
+      <p id="result-note" class="note"></p>
+      <button type="button" id="again">Try again</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
