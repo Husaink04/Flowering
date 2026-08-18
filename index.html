@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which flower are you? | Flowering</title>
+  <meta id="meta-robots" name="robots" content="index, follow">
+  <meta name="description" content="Enter your name and birth date. Flowering names the bloom you already are — a personal flower, qualities, and a portrait written as you.">
+  <meta name="author" content="Husain">
+  <meta name="theme-color" content="#9a4d3c">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://husaink04.github.io/Flowering/">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Flowering">
+  <meta property="og:url" content="https://husaink04.github.io/Flowering/">
+  <meta property="og:title" content="Which flower are you? | Flowering">
+  <meta property="og:description" content="Give your name and the day you arrived. We will name the bloom you already are.">
+  <meta property="og:image" content="https://husaink04.github.io/Flowering/og.png">
+  <meta property="og:image:alt" content="Flowering — which flower are you?">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Which flower are you? | Flowering">
+  <meta name="twitter:description" content="Give your name and the day you arrived. We will name the bloom you already are.">
+  <meta name="twitter:image" content="https://husaink04.github.io/Flowering/og.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Flowering",
+    "url": "https://husaink04.github.io/Flowering/",
+    "description": "Enter your name and birth date to discover which flower you are, with personality qualities written as you.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Husain", "url": "https://github.com/Husaink04" }
+  }
+  </script>
+</head>
+<body>
+  <div class="wash" aria-hidden="true">
+    <span class="petal p1"></span>
+    <span class="petal p2"></span>
+    <span class="petal p3"></span>
+    <span class="petal p4"></span>
+  </div>
+  <main>
+    <section id="form-view" class="card">
+      <p class="brand">Flowering</p>
+      <p class="eyebrow">A quiet matching</p>
+      <h1>Which <em>flower</em> are you?</h1>
+      <p class="lede">Give your name and the day you arrived. We will name the bloom you already are.</p>
+      <form id="bloom-form" novalidate>
+        <label for="name">Your name
+          <input type="text" id="name" name="name" autocomplete="name" maxlength="80" placeholder="Zainab" required>
+        </label>
+        <label for="birthdate">Birth date
+          <input type="date" id="birthdate" name="birthdate" required>
+        </label>
+        <p id="error" class="error" hidden></p>
+        <button type="submit">Bloom</button>
+      </form>
+    </section>
+
+    <section id="result-view" class="card result" hidden>
+      <p class="eyebrow" id="result-eyebrow"></p>
+      <figure class="bloom-mark">
+        <img id="result-photo" alt="" hidden>
+        <span id="result-emoji" aria-hidden="true"></span>
+      </figure>
+      <p class="you-are"><span id="result-name"></span>, you are</p>
+      <h2 id="result-flower"></h2>
+      <ul id="result-qualities"></ul>
+      <p id="result-portrait"></p>
+      <p id="result-season" class="season"></p>
+      <p id="result-note" class="note"></p>
+      <div class="actions">
+        <button type="button" id="copy-link">Copy</button>
+        <button type="button" id="again">Try again</button>
+      </div>
+      <p id="share-status" class="share-status" hidden></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Flowering",
+  "short_name": "Flowering",
+  "description": "Enter your name and birth date to discover which flower you are.",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#f4e6dc",
+  "theme_color": "#9a4d3c",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
